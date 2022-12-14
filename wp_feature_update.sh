@@ -13,9 +13,11 @@
 # ---------------------------------------------------------------#
 # History:                                                       #
 #   V1.0.1 2022-12-11                                            #
-#        -Initial release.                                       #
+#       -Initial release.                                        #
 #   V1.0.2 2022-12-13                                            #
-#        -Includes Mysql Dumping                                 #
+#       -Includes Mysql Dumping                                  #
+#    V1.0.3 2022-12-14                                           #
+#        -Fixing command order errors                            #
 #----------------------------------------------------------------#
 ##################################################################
 
@@ -111,8 +113,8 @@ do
     
     sleep 2;
     
-    # WP-CLI command to update the plugins.
-    wp plugin update --all --allow-root;
+    # WP-CLI command to update the core.
+    wp core update --allow-root;
     
     echo;
     echo;
@@ -147,8 +149,8 @@ do
 
     sleep 2;
 
-    # WP-CLI command to update the core.
-    wp core update --allow-root;
+    # WP-CLI command to update the plugins.
+    wp plugin update --all --allow-root;
 
     echo;
     echo;
