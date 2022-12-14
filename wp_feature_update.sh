@@ -23,7 +23,7 @@
 # extension like .net, .co, etc, change the variable SRCSITE.
 
 # Expression to get only the domains, 
-# using the cut to get the fields and the tr to delete the empty lines.
+# using the cut to get the fields and the sed to delete the empty lines.
 SRCSITE=$(ls /srv/ | grep ".com" | cut -d/ -f3 | tr -d "[\:], [\-\>]" | sed -r '/^[\s\t]*$/d')
 
 for BKPDATA in $SRCSITE;
