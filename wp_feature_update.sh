@@ -103,7 +103,7 @@ do
     
     echo;
     echo;
-    echo "Updating Plugins...";
+    echo "Updating Wordpress Version...";
 
     echo -e "\e[1;36m------------------------------------------------------------------------\e[0m"
 
@@ -139,7 +139,7 @@ do
     
     sleep 2;
 
-    echo "Updating Wordpress Version...";
+    echo "Updating Plugins...";
 
     echo -e "\e[1;36m------------------------------------------------------------------------\e[0m"
 
